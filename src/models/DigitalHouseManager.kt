@@ -39,7 +39,7 @@ class DigitalHouseManager(
 
     fun registrarProfessorAdjunto(nome: String, sobrenome: String, codigoProfessor: Int, quantidadeDeHoras: Int) {
 
-        val professorAdjunto = ProfessorAdjunto(nome, sobrenome, codigoProfessor, quantidadeDeHoras, especialidade);
+        val professorAdjunto = ProfessorAdjunto(nome, sobrenome, codigoProfessor, quantidadeDeHoras);
 
         this.professores.add(professorAdjunto);
 
@@ -47,7 +47,7 @@ class DigitalHouseManager(
 
     fun registrarProfessorTitular(nome: String, sobrenome: String, codigoProfessor: Int, especialidade: String) {
 
-        val professorTitular = ProfessorAdjunto(nome, sobrenome, codigoProfessor, 0, especialidade);
+        val professorTitular = ProfessorTitular(nome, sobrenome, codigoProfessor, 0, especialidade);
 
         this.professores.add(professorTitular);
 
@@ -89,8 +89,6 @@ class DigitalHouseManager(
 
                 curso = it;
 
-                valideUm = true;
-
             }
 
         }
@@ -100,8 +98,6 @@ class DigitalHouseManager(
             if (it.codigoAluno == codigoAluno) {
 
                 aluno = it;
-
-                valideDois = true;
 
             }
 

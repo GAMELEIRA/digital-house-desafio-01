@@ -10,8 +10,6 @@ class ProfessorAdjunto(
 
     tempoDeCasa: Int,
 
-    var especialidade: String
-
 ) : Professor(nome, sobrenome, tempoDeCasa,  codigoProfessor) {
 
     var quantidadeHorasMonitoria: Int = 0;
