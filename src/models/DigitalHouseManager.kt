@@ -1,6 +1,5 @@
 package models
 
-import java.time.LocalDateTime
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -170,9 +169,9 @@ class DigitalHouseManager(
 
         } else {
 
-            curso.professorAdjunto = professorAdjunto as ProfessorAdjunto;
+            curso!!.professorAdjunto = professorAdjunto as ProfessorAdjunto;
 
-            curso.professorTitular = professorTitular as ProfessorTitular;
+            curso!!.professorTitular = professorTitular as ProfessorTitular;
 
         }
 
